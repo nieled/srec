@@ -1,0 +1,23 @@
+<form>
+	<label>
+		UserID:
+	</label>
+	<input type="text" ng-model="ratingAdd.rating.UserID"/>
+	<br/>
+	<label>
+		MovieID:
+	</label>
+	<input type="text" ng-model="ratingAdd.rating.MovieID"/>
+	<br/>
+	<label>
+		Rating:
+	</label>
+	<input type="text" ng-model="ratingAdd.rating.Rating"/>
+	<br/>
+	<label>
+		Timestamp:
+	</label>
+	<input type="text" ng-model="ratingAdd.rating.Timestamp"/>
+	<br/>
+	<button ng-click="ratingAdd.submit()">Add Rating!</button>
+</form>

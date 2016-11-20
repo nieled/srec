@@ -1,0 +1,9 @@
+<rating-add></rating-add>
+
+<h1>Lista de ratings</h1>
+
+<ul ng-repeat="item in ratingsList.ratings">
+	<h2>{{item.UserID}} </h2>
+	<p>{{item.Rating}} </p>
+	<rating-remove rating="rating"></rating-remove>
+</ul>
