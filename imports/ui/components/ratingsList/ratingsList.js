@@ -15,7 +15,7 @@ class RatingsList {
 
 		this.helpers({
 			ratings() {
-				console.log(Ratings.find({}).fetch());
+				//console.log(Ratings.find({}).fetch());
 				return Ratings.find({});
 			}
 		});

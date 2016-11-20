@@ -3,7 +3,8 @@
 <h1>Lista de ratings</h1>
 
 <ul ng-repeat="item in ratingsList.ratings">
-	<h2>UserID: {{item.UserID}} </h2>
+	UserID: <a ui-sref="ratingDetails({ ratingId: item._id })">
+	{{item.UserID}} </a>
 	<p>MovieID{{item.MovieID}} </p>
 	<p>Rating{{item.Rating}} </p>
 	<rating-remove rating="rating"></rating-remove>

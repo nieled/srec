@@ -5,6 +5,7 @@ import uiRouter from 'angular-ui-router';
 import template from './srec.html';
 import { name as RatingsList } from '../ratingsList/ratingsList';
 import { name as UserList } from '../userList/userList';
+import { name as RatingDetails } from '../ratingDetails/ratingDetails';
 import { name as Navigation } from '../navigation/navigation';
 
 class Srec {}
@@ -17,6 +18,7 @@ export default angular.module(name, [
 	uiRouter,
 	RatingsList,
 	UserList,
+	RatingDetails,
 	Navigation
 ]).component(name, {
 	template,
