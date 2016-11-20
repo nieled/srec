@@ -1,5 +1,6 @@
 import angular from 'angular';
 import angularMeteor from 'angular-meteor';
+import uiRouter from 'angular-ui-router';
 
 import template from './ratingsList.html';
 import { Ratings } from '../../../api/ratings';
@@ -26,10 +27,21 @@ const name = 'ratingsList';
 // create a module
 export default angular.module(name, [
 	angularMeteor,
+	uiRouter,
 	RatingAdd,
 	RatingRemove
 ]).component(name, {
 	template,
 	controllerAs: name,
 	controller: RatingsList
-});
+})
+	.config(config);
+
+function config($stateProvider) {
+  'ngInject';
+  $stateProvider
+    .state('ratings', {
+      url: '/ratings',
+      template: '<ratings-list></ratings-list>'
+    });
+}
