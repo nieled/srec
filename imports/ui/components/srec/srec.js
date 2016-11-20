@@ -17,7 +17,7 @@ export default angular.module(name, [
 	uiRouter,
 	RatingsList,
 	UserList,
-	Navigation1
+	Navigation
 ]).component(name, {
 	template,
 	controllerAs: name,
@@ -26,9 +26,9 @@ export default angular.module(name, [
 	.config(config);
 
 function config($locationProvider, $urlRouterProvider) {
-	'ngInject';
-
-	$locationProvider.html5Mode(true);
-
-	$urlRouterProvider.otherwise('/srec');
+  'ngInject';
+ 
+  $locationProvider.html5Mode(true);
+ 
+  $urlRouterProvider.otherwise('/srec');
 }
